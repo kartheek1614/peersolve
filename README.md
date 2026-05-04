@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PeerSolve
 
 Anonymous student Q&A platform built with Next.js 14, Supabase, and Tailwind CSS.
@@ -202,3 +203,6 @@ peersolve/
 - Upvote counter can drift if both operations don't complete atomically
 
 These can be addressed post-MVP with Supabase Realtime, cursor pagination, and database functions.
+=======
+# peersolve
+>>>>>>> d319e0e49310e3385fb6238002a67d63d3349efc
