@@ -73,7 +73,7 @@ export default async function PostDetailPage({ params }: PageProps) {
     content: post.content,
     upvotes: post.upvotes,
     created_at: post.created_at,
-    anon_name: (post.users as { anon_name: string } | null)?.anon_name ?? "Unknown",
+    anon_name: (post.users as { anon_name: string }[] | null)?.[0]?.anon_name ?? "Unknown",
     user_has_voted: !!vote,
   };
 
