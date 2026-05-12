@@ -104,7 +104,7 @@ export default async function PostDetailPage({ params }: PageProps) {
               <h1 className="text-xl font-semibold leading-snug mb-3">{post.title}</h1>
               <div className="flex items-center gap-3 text-xs text-muted-foreground mb-4">
                 <span className="font-mono bg-muted px-1.5 py-0.5 rounded">
-                  {(post.users as { anon_name: string } | null)?.anon_name ?? "Unknown"}
+                  {(post.users as unknown as { anon_name: string } | null)?.anon_name ?? "Unknown"}
                 </span>
                 <span className="flex items-center gap-1">
                   <Clock className="h-3 w-3" />
